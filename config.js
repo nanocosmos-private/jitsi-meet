@@ -367,6 +367,13 @@ var config = {
     // When 'true', it shows an intermediate page before joining, where the user can configure their devices.
     // prejoinPageEnabled: false,
 
+    // If etherpad integration is enabled, setting this to true will
+    // automatically open the etherpad when a participant joins.  This
+    // does not affect the mobile app since opening an etherpad
+    // obscures the conference controls -- it's better to let users
+    // choose to open the pad on their own in that case.
+    // openSharedDocumentOnJoin: false,
+
     // If true, shows the unsafe room name warning label when a room name is
     // deemed unsafe (due to the simplicity in the name) and a password is not
     // set or the lobby is not enabled.
@@ -609,15 +616,24 @@ var config = {
          logoImageUrl: 'https://example.com/logo-img.png'
      }
     */
-    // brandingDataUrl: '',
+    // dynamicBrandingUrl: '',
 
     // The URL of the moderated rooms microservice, if available. If it
     // is present, a link to the service will be rendered on the welcome page,
     // otherwise the app doesn't render it.
     // moderatedRoomServiceUrl: 'https://moderated.jitsi-meet.example.com',
 
+    // If true, tile view will not be enabled automatically when the participants count threshold is reached.
+    // disableTileView: true,
+
+    // Hides the conference subject
+    // hideConferenceSubject: true
+
     // Hides the conference timer.
     // hideConferenceTimer: true,
+
+    // Hides the participants stats
+    // hideParticipantsStats: true
 
     // Sets the conference subject
     // subject: 'Conference Subject',
